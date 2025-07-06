@@ -101,6 +101,49 @@
         justify-content: center;
     }
     
+    /* Mobile responsive for new elements */
+    .hero-badge {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+    
+    .hero-cta {
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .btn-glow {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .floating-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+    
+    .floating-icon:nth-child(1) {
+        right: -15px;
+    }
+    
+    .floating-icon:nth-child(2) {
+        left: -15px;
+    }
+    
+    .floating-icon:nth-child(3) {
+        right: -15px;
+    }
+    
+    .particle {
+        width: 3px;
+        height: 3px;
+    }
+    
+    .role-tag {
+        font-size: 1rem;
+    }
+    
     /* Education Section */
     .education-item {
         flex-direction: column;
@@ -242,6 +285,28 @@
         width: 100%;
         max-width: 250px;
         justify-content: center;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-glow {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+    
+    .floating-icon {
+        width: 25px;
+        height: 25px;
+        font-size: 0.9rem;
+    }
+    
+    .hero-badge {
+        font-size: 0.7rem;
+        padding: 5px 10px;
     }
     
     /* Profile Circle */

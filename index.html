@@ -21,9 +21,13 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.47/build/spline-viewer.js"></script>
 </head>
 <body>
+    
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar"></div>
+    </div>
     
     <!-- Falling Stars -->
     <div class="falling-star star-1">★</div>
@@ -31,6 +35,9 @@
     <div class="falling-star star-3">★</div>
     <div class="falling-star star-4">★</div>
     <div class="falling-star star-5">★</div>
+    <div class="falling-star star-6">★</div>
+    <div class="falling-star star-7">★</div>
+    <div class="falling-star star-8">★</div>
 
     <!-- Navigation -->
     <nav class="navbar">
@@ -57,47 +64,78 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <spline-viewer class="spline-bg" url="https://prod.spline.design/bO3YuChfbBa2bYO7/scene.splinecode"></spline-viewer>
+        <!-- Animated Background Particles -->
+        <div class="particles-container parallax" data-speed="0.3">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
         <div class="hero-container">
             <div class="hero-content">
-                <div class="hero-text">
+                <div class="hero-text animate-stagger">
                     <h1 class="hero-title">
                         <span class="greeting">Hi, I'm <span class="wave-emoji">👋</span></span><br>
-                        <span class="highlight">Nada Fitria Muyassarah</span>
+                        <span class="highlight gradient-text">Nada Fitria Muyassarah</span>
                     </h1>
-                    <h2 class="hero-subtitle">
+                    <h2 class="hero-subtitle animate-stagger">
                         <span class="typing-text"></span>
                     </h2>
-                    <p class="hero-description">
+                    <p class="hero-description animate-stagger">
                         Information Systems Student | Web & Desktop App Developer | Organization & Project-Oriented
                     </p>
+                    <div class="hero-cta animate-stagger">
+                        <a href="#projects" class="btn btn-primary btn-glow">
+                            <i class="fas fa-rocket"></i> View My Work
+                        </a>
+                        <a href="#about" class="btn btn-secondary">
+                            <i class="fas fa-user"></i> Learn More
+                        </a>
+                    </div>
                 </div>
-                <div class="hero-image">
+                <div class="hero-image animate-stagger">
                     <div class="profile-hexagon">
                         <div class="hexagon-container">
+                            <div class="profile-glow"></div>
                             <img src="assets/image/profil.jpg" alt="Nada Fitria Muyassarah" id="profile-img">
+                        </div>
+                        <div class="floating-icons">
+                            <div class="floating-icon" data-tooltip="Java Developer">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <div class="floating-icon" data-tooltip="Web Developer">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="floating-icon" data-tooltip="Database">
+                                <i class="fas fa-database"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="hero-info">
-                <div class="info-item">
+                <div class="info-item animate-stagger">
                     <i class="fas fa-graduation-cap"></i>
                     <span>Universitas Dharma Andalas</span>
                 </div>
-                <div class="info-item">
+                <div class="info-item animate-stagger">
                     <i class="fas fa-map-marker-alt"></i>
                     <span>Indonesia</span>
                 </div>
-                <div class="info-item">
+                <div class="info-item animate-stagger">
                     <i class="fas fa-envelope"></i>
                     <span>rasarah443@gmail.com</span>
                 </div>
-                <div class="info-item">
+                <div class="info-item animate-stagger">
                     <i class="fab fa-linkedin"></i>
                     <a href="https://linkedin.com/in/nada-fitria-muyassarah-7b3379305" target="_blank">LinkedIn</a>
                 </div>
-                <div class="info-item">
+                <div class="info-item animate-stagger">
                     <i class="fab fa-github"></i>
                     <a href="https://github.com/sarahhhndfm" target="_blank">GitHub</a>
                 </div>
@@ -110,34 +148,34 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <div class="about-header">
+                    <div class="about-header animate-stagger">
                         <h3 class="about-title">About Me</h3>
                         <div class="about-line"></div>
                     </div>
-                    <p class="about-description">
-                        Saya adalah mahasiswa Program Studi Sistem Informasi di Universitas Dharma Andalas yang memiliki minat besar dalam pengembangan perangkat lunak, desain antarmuka pengguna (UI/UX), dan digitalisasi proses bisnis. Berbekal dasar-dasar pemrograman Java, PHP, HTML/CSS, serta manajemen basis data MySQL, saya telah mengembangkan beberapa aplikasi dan sistem sederhana sebagai implementasi nyata dari ilmu yang saya pelajari di bangku kuliah.
+                    <p class="about-description animate-stagger">
+                        Saya adalah mahasiswa Program Studi Sistem Informasi di Universitas Dharma Andalas yang memiliki minat besar dalam pengembangan perangkat lunak dan digitalisasi proses bisnis. Berbekal dasar-dasar pemrograman Java, PHP, HTML/CSS, serta manajemen basis data MySQL, saya telah mengembangkan beberapa aplikasi dan sistem sederhana sebagai implementasi nyata dari ilmu yang saya pelajari di bangku kuliah.
                     </p>
-                    <p class="about-description">
+                    <p class="about-description animate-stagger">
                         Sejauh ini, saya telah membangun Aplikasi Keuangan UMKM – Es Teh Poci, sebuah aplikasi desktop berbasis Java (NetBeans) yang dirancang untuk membantu pelaku usaha kecil mencatat transaksi harian, mencetak laporan keuangan, dan memantau alur kas usaha secara terstruktur. Serta Website E-Commerce Sepatu Online, sebuah platform sederhana berbasis web menggunakan HTML, CSS, PHP, dan MySQL yang memfasilitasi penjelajahan produk, pengelolaan keranjang belanja, dan sistem pemesanan dasar.
                     </p>
-                    <p class="about-description">
-                        Selain dalam bidang teknologi, saya aktif juga dalam kegiatan organisasi mahasiswa. Saya merupakan anggota HIMASI di Divisi Kemahasiswaan, serta pernah dipercaya menjadi Ketua Pelaksana LDKM 2025 dan panitia Divisi Acara pada kegiatan Makrab 2024. Pengalaman ini memperkuat kemampuan saya dalam komunikasi, kolaborasi tim, dan manajemen proyek.
+                    <p class="about-description animate-stagger">
+                        Selain di bidang teknologi, saya juga aktif dalam kegiatan organisasi mahasiswa. Saya merupakan anggota HIMASI di Divisi Kemahasiswaan, serta pernah dipercaya menjadi Ketua Pelaksana LDKM 2025 dan panitia Divisi Acara pada kegiatan Makrab 2024. Pengalaman ini memperkuat kemampuan saya dalam komunikasi, kolaborasi tim, dan manajemen proyek.
                     </p>
-                    <p class="about-description">
+                    <p class="about-description animate-stagger">
                         Saya percaya bahwa penguasaan teknologi informasi harus dibarengi dengan kemampuan kepemimpinan dan soft skill yang kuat. Oleh karena itu, saya terus mengembangkan diri melalui kombinasi proyek, organisasi, dan pembelajaran mandiri yang berkelanjutan.
                     </p>
                 </div>
                 <div class="skills-section">
-                    <div class="skills-header" style="justify-content: flex-start;">
+                    <div class="skills-header animate-stagger" style="justify-content: flex-start;">
                         <h4 class="skills-subtitle">Skills</h4>
                     </div>
-                    <div class="skills-categories">
+                    <div class="skills-categories animate-stagger">
                         <span class="skill-category active" data-category="tech-stack">Tech Stack</span>
                         <span class="skill-category" data-category="tools">Tools</span>
                         <span class="skill-category" data-category="soft-skills">Soft Skills</span>
                     </div>
                     <div class="skills-badges">
-                        <div class="badge-group active" id="tech-stack">
+                        <div class="badge-group active animate-stagger" id="tech-stack">
                             <span class="skill-badge tech" data-skill="java"><i class="fab fa-java"></i> Java</span>
                             <span class="skill-badge tech" data-skill="php"><i class="fab fa-php"></i> PHP</span>
                             <span class="skill-badge tech" data-skill="html5"><i class="fab fa-html5"></i> HTML5</span>
@@ -145,14 +183,14 @@
                             <span class="skill-badge tech" data-skill="javascript"><i class="fab fa-js"></i> JavaScript</span>
                             <span class="skill-badge tech" data-skill="mysql"><i class="fas fa-database"></i> MySQL</span>
                         </div>
-                        <div class="badge-group" id="tools">
+                        <div class="badge-group animate-stagger" id="tools">
                             <span class="skill-badge tool" data-skill="git"><i class="fab fa-git-alt"></i> Git</span>
                             <span class="skill-badge tool" data-skill="github"><i class="fab fa-github"></i> GitHub</span>
                             <span class="skill-badge tool" data-skill="netbeans"><i class="fas fa-code"></i> NetBeans</span>
                             <span class="skill-badge tool" data-skill="vscode"><i class="fas fa-terminal"></i> VS Code</span>
                             <span class="skill-badge tool" data-skill="xampp"><i class="fas fa-server"></i> XAMPP</span>
                         </div>
-                        <div class="badge-group" id="soft-skills">
+                        <div class="badge-group animate-stagger" id="soft-skills">
                             <span class="skill-badge soft" data-skill="communication"><i class="fas fa-comments"></i> Communication</span>
                             <span class="skill-badge soft" data-skill="teamwork"><i class="fas fa-users"></i> Teamwork</span>
                             <span class="skill-badge soft" data-skill="leadership"><i class="fas fa-user-tie"></i> Leadership</span>
@@ -170,11 +208,11 @@
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">Some of my recent work</p>
+                <h2 class="section-title animate-stagger">Featured Projects</h2>
+                <p class="section-subtitle animate-stagger">Some of my recent work</p>
             </div>
             <div class="projects-grid">
-                <div class="project-book">
+                <div class="project-book animate-stagger">
                     <div class="book-container">
                         <div class="book-page front-page">
                             <div class="project-animation">
@@ -213,7 +251,7 @@
                     </div>
                 </div>
 
-                <div class="project-book">
+                <div class="project-book animate-stagger">
                     <div class="book-container">
                         <div class="book-page front-page">
                             <div class="project-animation">
@@ -261,12 +299,12 @@
             <div class="section-header">
                 <div class="section-title-container">
                     <div class="section-line"></div>
-                    <h2 class="section-title">Certificates</h2>
+                    <h2 class="section-title animate-stagger">Certificates</h2>
                 </div>
-                <p class="section-subtitle">My achievements and qualifications</p>
+                <p class="section-subtitle animate-stagger">My achievements and qualifications</p>
             </div>
             <div class="certificates-grid">
-                <div class="certificate-card">
+                <div class="certificate-card animate-stagger">
                     <div class="certificate-image">
                         <img src="assets/images/certificates/dicoding-certificate.png" alt="Dicoding Certificate">
                         <div class="certificate-overlay">
@@ -279,7 +317,7 @@
                     </div>
                 </div>
 
-                <div class="certificate-card">
+                <div class="certificate-card animate-stagger">
                     <div class="certificate-image">
                         <img src="assets/images/certificates/oracle-certificate.png" alt="Oracle Certificate">
                         <div class="certificate-overlay">
@@ -292,7 +330,7 @@
                     </div>
                 </div>
 
-                <div class="certificate-card">
+                <div class="certificate-card animate-stagger">
                     <div class="certificate-image">
                         <img src="assets/images/certificates/ldkm-certificate.jpg" alt="LDKM Certificate">
                         <div class="certificate-overlay">
@@ -305,7 +343,7 @@
                     </div>
                 </div>
 
-                <div class="certificate-card">
+                <div class="certificate-card animate-stagger">
                     <div class="certificate-image">
                         <img src="assets/images/certificates/oracle-certificate2.png" alt="University Certificate">
                         <div class="certificate-overlay">
